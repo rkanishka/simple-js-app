@@ -32,11 +32,13 @@ let pokemonlist=[
 for( let i=0; i< pokemonlist.length; i++)
 { if (pokemonlist[i].height>1.0)
       {
-            document.write(pokemonlist[i]+"wow that's big");
-      }else{
-      document.write(pokemonlist[i]);}
+      document.write(pokemonlist[i].name+ pokemonlist[i].height+"wow that's big"+"<br>");
       }
+      else
+      {
+      document.write(pokemonlist[i].name+pokemonlist[i].height+"<br>");
+      }
+}
 
 
       
-     
