@@ -29,7 +29,7 @@ let pokemonlist=[
       name:'MACHOKE', 
      height:1.5, 
      type:['FIGHTING']
-}]});
+}];
 //for( let i=0; i< pokemonlist.length; i++)
 //{ if (pokemonlist[i].height>1.0)
     //  {
@@ -41,6 +41,20 @@ let pokemonlist=[
    //  }
 //}
 pokemonlist.forEach(function(pokemon){
-      document.write("<p>"+"NAME:"+pokemon.name+"<br>"+"HEIGHT:"+pokemon.height+"<br>"+"TYPE:"+pokemon.type+"</p>");
+     document.write("<p>"+"NAME:"+pokemon.name+"<br>"+"HEIGHT:"+pokemon.height+"<br>"+"TYPE:"+pokemon.type+"</p>");
 });
-
+      function getAll() {
+      return pokemonlist;
+    }
+    function add(pokemon) {
+      pokemonlist.push(pokemon);
+      }   
+  
+    return {
+      getAll: getAll,
+      add:add
+    }
+  })()
+  console.log(pokemonRepository.getAll())
+  console.log(pokemonRepository.add())
+  
