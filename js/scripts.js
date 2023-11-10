@@ -40,9 +40,6 @@ let pokemonlist=[
     //  document.write("<p>"+"NAME:"+pokemonlist[i].name+"<br>"+"HEIGHT:"+pokemonlist[i].height+"<br>"+"TYPE:"+pokemonlist[i].type+"<br>"+"</p>");
    //  }
 //}
-//pokemonlist.forEach(function(pokemon){
-      //document.write("<p>"+"NAME:"+pokemon.name+"<br>"+"HEIGHT:"+pokemon.height+"<br>"+"TYPE:"+pokemon.type+"</p>");
-// });
       function getAll() {
       return pokemonlist;
     }
@@ -55,6 +52,6 @@ let pokemonlist=[
       add:add
     }
 })()
-console.log(pokemonRepository.getAll())
-console.log(pokemonRepository.add())
-  
+pokemonRepository.getAll().forEach(function(pokemon){
+      document.write("<p>"+"NAME:"+pokemon.name+"<br>"+"HEIGHT:"+pokemon.height+"<br>"+"TYPE:"+pokemon.type+"</p>");
+ });
