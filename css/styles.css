@@ -1,0 +1,21 @@
+
+.button-class{
+      background-color: rgb(43, 226, 86);
+      color:white;
+      padding:18px 36px;
+      text-align:center;
+      display: inline-block;
+      font-size: 20px;
+      margin: 10px;
+      transition-duration: 0.4s;
+      cursor: pointer;
+      
+}
+.button-class:hover {
+      transform: scale(1.1);
+    }
+    
+   
+    .button-class:active {
+      background-color: #45a049;
+    }
