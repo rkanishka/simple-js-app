@@ -1,68 +1,57 @@
-.button-class {
-  background-color: rgb(43, 226, 86);
-  color: white;
-  padding: 18px 36px;
-  text-align: center;
-  display: inline-block;
-  font-size: 20px;
-  margin: 10px;
-  transition-duration: 0.4s;
-  cursor: pointer;
+
+
+#modal-container {
+    display: none; 
 }
 
-.button-class:hover {
-  transform: scale(1.1);
+#modal-container.is-visible {    
+    position: fixed;
+    padding: 20px;
+    box-sizing: border-box;
+    top: 50%;
+    left: 50%;    
+    max-width: auto;       
+    background: rgb(126, 22, 22);
+    justify-content: center;
+    
+    /* to show it above other content */
+    z-index: 999;
+
+    /*to allow scrolling if the screen is not high enough */
+    overflow: auto;
+
+    /* this is used to center the modal */
+    display:grid;
+    text-align: center;
 }
 
-.button-class:active {
-  background-color: #45a049;
+.button-class {   
+    border: 2px;    
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block; 
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    background-color: lightyellow;    
+    border: 2px solid black;
+    list-style-type: none; 
 }
 
-#pokemon-container {
-  position: fixed;
-  padding: 20px;
-  box-sizing: border-box;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5);
+.pokemon-list {
+    text-align: center;
+    list-style-type: none;
+    border: 2px;    
 }
 
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 1000;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
-.modal-content {
-  background-color: #fefefe;
-  margin: 15% auto;
-  padding: 20px;
-  border: 1px solid #888;
-  width: 80%;
+.main-heading {
+    text-align: center;
+    text-decoration: none;
+    font-family:'Trebuchet MS';
 }
 
 .modal-close {
-  color: #aaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.modal-close:hover,
-.modal-close:focus {
-  color: black;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.is-visible {
-  display: block;
+    float: grid;
+    text-decoration: underline;    
 }
