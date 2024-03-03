@@ -1,0 +1,1 @@
+This project is a simple Pokémon web application built using JavaScript, HTML, and CSS. It allows users to browse and search for Pokémon, view details about each Pokémon, and catch them. The app retrieves data from the PokéAPI.
